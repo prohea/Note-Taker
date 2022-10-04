@@ -26,31 +26,10 @@ app.get('/api/notes', (req, res) => {
 
 //Post
 app.post('/api/notes', (req, res) => {
-    const { noteTitle, noteText} = req.body;
+    const { noteTitle, noteText } = req.body;
+}
 
-    // If all the required properties are present
-    if (noteTitle && noteText) {
-      // Variable for the object we will save
-      const newNote = {
-        noteTitle,
-        noteText,
-        note_id: uuidv4(),
-      };
-  
-      readAndAppend(newNote, 'db/db.json');
-  
-      const response = {
-        status: 'success',
-        body: newNote,
-      };
-  
-      res.json(response);
-    } else {
-      res.json('Error in posting note');
-    }
-  });
-  
-  module.exports = note;
+);
 
 app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
