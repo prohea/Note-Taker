@@ -4,15 +4,15 @@ const util = require("util");
 const readFromFile = util.promisify(fs.readFile);
 
 const readAndAppend = (content, file) => {
-    fs.readFile(file, "utf8", (err, data) => {
-        if (err) {
-            console.error(err);
-        } else {
-            const parsedData = JSON.parsedData;
-            parsedData.push(content);
-            writeToFile(file, parsedData);
-        }
-    });
+	fs.readFile(file, "utf8", (err, data) => {
+		if (err) {
+			console.error(err);
+		} else {
+			const parsedData = JSON.parsedData;
+			parsedData.push(content);
+			writeToFile(file, parsedData);
+		}
+	});
 };
 
 module.exports = { readFromFile, writeToFile, readAndAppend };
