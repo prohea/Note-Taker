@@ -1,14 +1,25 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "note taker",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prohea/Note-Taker.git"
+  },
+  "author": "prohea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prohea/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/prohea/Note-Taker#readme"
 }

@@ -10,11 +10,12 @@ const {
 notes.get("/", (req, res) => {
 	readFromFile("../db/db.json").then((data) => res.json(JSON.parse(data)));
 });
+
 //POST route for posting notes
 notes.post("/", (req, res) => {
 	const { title, text } = req.body;
 
-	if (title && text) {
+	if (req.body) {
 		const newNotes = {
 			title,
 			text,
