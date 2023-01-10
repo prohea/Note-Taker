@@ -25,5 +25,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Resources
 
 ## Technologies Used
+javascript
 
 ## Deployed Project
+https://github.com/prohea/Fun-Note
